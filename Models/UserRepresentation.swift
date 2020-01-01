@@ -11,8 +11,8 @@ import Foundation
 struct UserRepresentation: Codable {
     let username: String
     let password: String
-    let firstName: String
-    let lastName: String
     let id: UUID
     let isLoggedIn: Bool
+    let firstName: String
+    let lastName: String
 }
