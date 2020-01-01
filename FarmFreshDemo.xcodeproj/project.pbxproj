@@ -18,6 +18,8 @@
 		FA9D1C6423BCE30C00059C04 /* User+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6323BCE30C00059C04 /* User+Convenience.swift */; };
 		FA9D1C6623BCE49900059C04 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6523BCE49900059C04 /* CoreDataStack.swift */; };
 		FA9D1C6823BCE7A900059C04 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6723BCE7A900059C04 /* UserRepresentation.swift */; };
+		FA9D1C6A23BCEEAF00059C04 /* ProduceRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6923BCEEAF00059C04 /* ProduceRepresentation.swift */; };
+		FA9D1C6C23BCF06A00059C04 /* Produce+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6B23BCF06A00059C04 /* Produce+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FA9D1C6323BCE30C00059C04 /* User+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Convenience.swift"; sourceTree = "<group>"; };
 		FA9D1C6523BCE49900059C04 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FA9D1C6723BCE7A900059C04 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
+		FA9D1C6923BCEEAF00059C04 /* ProduceRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceRepresentation.swift; sourceTree = "<group>"; };
+		FA9D1C6B23BCF06A00059C04 /* Produce+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Produce+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				FA9D1C6023BCE0E900059C04 /* User.xcdatamodeld */,
 				FA9D1C6323BCE30C00059C04 /* User+Convenience.swift */,
 				FA9D1C6723BCE7A900059C04 /* UserRepresentation.swift */,
+				FA9D1C6923BCEEAF00059C04 /* ProduceRepresentation.swift */,
+				FA9D1C6B23BCF06A00059C04 /* Produce+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,7 +213,9 @@
 				FA9D1C6423BCE30C00059C04 /* User+Convenience.swift in Sources */,
 				FA9D1C5F23BCE0D600059C04 /* Order.xcdatamodeld in Sources */,
 				FA9D1C6823BCE7A900059C04 /* UserRepresentation.swift in Sources */,
+				FA9D1C6A23BCEEAF00059C04 /* ProduceRepresentation.swift in Sources */,
 				FA9D1C5C23BCE0B600059C04 /* Produce.xcdatamodeld in Sources */,
+				FA9D1C6C23BCF06A00059C04 /* Produce+Convenience.swift in Sources */,
 				FA9D1C6223BCE0E900059C04 /* User.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
