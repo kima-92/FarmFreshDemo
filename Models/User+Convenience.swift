@@ -18,9 +18,21 @@ extension User {
             let password = password,
             let id = id,
             let firstName = firstName,
-            let lastName = lastName else { return nil }
+            let lastName = lastName,
+            let type = userType else { return nil }
         
-        return UserRepresentation(username: username, password: password, id: id, isLoggedIn: isLoggedIn, firstName: firstName, lastName: lastName)
+        var newUserType: UserType = UserType.consumer
+        
+        switch type {
+        case UserType.farmer.rawValue :
+            newUserType = UserType.farmer
+        case UserType.consumer.rawValue :
+            newUserType = UserType.consumer
+        default:
+            break
+        }
+        
+        return UserRepresentation(username: username, password: password, id: id, isLoggedIn: isLoggedIn, firstName: firstName, lastName: lastName, phoneNum: phoneNum, userType: newUserType)
         
     }
     
@@ -31,6 +43,8 @@ extension User {
                                         isLoggedIn: Bool,
                                         firstName: String,
                                         lastName: String,
+                                        phoneNum: Int16,
+                                        userType: String,
                                         context: NSManagedObjectContext) {
         
         self.init(context: context)
@@ -41,6 +55,8 @@ extension User {
         self.isLoggedIn = isLoggedIn
         self.firstName = firstName
         self.lastName = lastName
+        self.phoneNum = phoneNum
+        self.userType = userType
     }
     
     // MARK: Init from Representation
@@ -54,8 +70,8 @@ extension User {
                   isLoggedIn: userRepresentation.isLoggedIn,
                   firstName: userRepresentation.firstName,
                   lastName: userRepresentation.lastName,
+                  phoneNum: userRepresentation.phoneNum,
+                  userType: userRepresentation.userType.rawValue,
                   context: context)
     }
-    
-    
 }

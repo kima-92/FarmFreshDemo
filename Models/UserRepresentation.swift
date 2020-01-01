@@ -15,4 +15,6 @@ struct UserRepresentation: Codable {
     let isLoggedIn: Bool
     let firstName: String
     let lastName: String
+    let phoneNum: Int16
+    let userType: UserType
 }
