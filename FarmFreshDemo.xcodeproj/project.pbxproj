@@ -26,6 +26,8 @@
 		FA9D1C7423BD0AD700059C04 /* FarmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7323BD0AD700059C04 /* FarmerHomeViewController.swift */; };
 		FA9D1C7623BD0AF600059C04 /* ConsumerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7523BD0AF600059C04 /* ConsumerHomeViewController.swift */; };
 		FA9D1C7823BD0EA700059C04 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7723BD0EA700059C04 /* UserType.swift */; };
+		FA9D1C7A23BD185C00059C04 /* OrderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7923BD185C00059C04 /* OrderRepresentation.swift */; };
+		FA9D1C7C23BE5F7F00059C04 /* Order+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7B23BE5F7F00059C04 /* Order+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		FA9D1C7323BD0AD700059C04 /* FarmerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmerHomeViewController.swift; sourceTree = "<group>"; };
 		FA9D1C7523BD0AF600059C04 /* ConsumerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerHomeViewController.swift; sourceTree = "<group>"; };
 		FA9D1C7723BD0EA700059C04 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
+		FA9D1C7923BD185C00059C04 /* OrderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepresentation.swift; sourceTree = "<group>"; };
+		FA9D1C7B23BE5F7F00059C04 /* Order+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				FA9D1C6323BCE30C00059C04 /* User+Convenience.swift */,
 				FA9D1C6923BCEEAF00059C04 /* ProduceRepresentation.swift */,
 				FA9D1C6B23BCF06A00059C04 /* Produce+Convenience.swift */,
+				FA9D1C7923BD185C00059C04 /* OrderRepresentation.swift */,
+				FA9D1C7B23BE5F7F00059C04 /* Order+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9D1C7C23BE5F7F00059C04 /* Order+Convenience.swift in Sources */,
 				FA9D1C7423BD0AD700059C04 /* FarmerHomeViewController.swift in Sources */,
+				FA9D1C7A23BD185C00059C04 /* OrderRepresentation.swift in Sources */,
 				FA9D1C7023BD05CA00059C04 /* LoginViewController.swift in Sources */,
 				FA9D1C7623BD0AF600059C04 /* ConsumerHomeViewController.swift in Sources */,
 				FA9D1C6623BCE49900059C04 /* CoreDataStack.swift in Sources */,
