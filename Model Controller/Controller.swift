@@ -61,6 +61,7 @@ class Controller {
     }
     
     //MARK: UpdateUsers
+    // Update in CD from representations given from server
     func updateUsers(with representations: [UserRepresentation]) {
         
         // Which representations do we already have in Core Data?
