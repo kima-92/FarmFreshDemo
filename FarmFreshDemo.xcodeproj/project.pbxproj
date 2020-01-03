@@ -20,7 +20,6 @@
 		FA9D1C6823BCE7A900059C04 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6723BCE7A900059C04 /* UserRepresentation.swift */; };
 		FA9D1C6A23BCEEAF00059C04 /* ProduceRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6923BCEEAF00059C04 /* ProduceRepresentation.swift */; };
 		FA9D1C6C23BCF06A00059C04 /* Produce+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6B23BCF06A00059C04 /* Produce+Convenience.swift */; };
-		FA9D1C6E23BD04E900059C04 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6D23BD04E900059C04 /* UserController.swift */; };
 		FA9D1C7023BD05CA00059C04 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C6F23BD05CA00059C04 /* LoginViewController.swift */; };
 		FA9D1C7423BD0AD700059C04 /* FarmerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7323BD0AD700059C04 /* FarmerHomeViewController.swift */; };
 		FA9D1C7623BD0AF600059C04 /* ConsumerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7523BD0AF600059C04 /* ConsumerHomeViewController.swift */; };
@@ -29,6 +28,9 @@
 		FA9D1C7C23BE5F7F00059C04 /* Order+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C7B23BE5F7F00059C04 /* Order+Convenience.swift */; };
 		FA9D1C7E23BE994B00059C04 /* Farmer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9D1C7D23BE994B00059C04 /* Farmer.storyboard */; };
 		FA9D1C8023BE995E00059C04 /* Consumer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9D1C7F23BE995E00059C04 /* Consumer.storyboard */; };
+		FA9D1C8223BEA64300059C04 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C8123BEA64300059C04 /* SignUpViewController.swift */; };
+		FA9D1C8423BEA7E100059C04 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C8323BEA7E100059C04 /* Controller.swift */; };
+		FA9D1C8623BEAF5F00059C04 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C8523BEAF5F00059C04 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,6 @@
 		FA9D1C6723BCE7A900059C04 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
 		FA9D1C6923BCEEAF00059C04 /* ProduceRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceRepresentation.swift; sourceTree = "<group>"; };
 		FA9D1C6B23BCF06A00059C04 /* Produce+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Produce+Convenience.swift"; sourceTree = "<group>"; };
-		FA9D1C6D23BD04E900059C04 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		FA9D1C6F23BD05CA00059C04 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA9D1C7323BD0AD700059C04 /* FarmerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmerHomeViewController.swift; sourceTree = "<group>"; };
 		FA9D1C7523BD0AF600059C04 /* ConsumerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerHomeViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		FA9D1C7B23BE5F7F00059C04 /* Order+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+Convenience.swift"; sourceTree = "<group>"; };
 		FA9D1C7D23BE994B00059C04 /* Farmer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Farmer.storyboard; sourceTree = "<group>"; };
 		FA9D1C7F23BE995E00059C04 /* Consumer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consumer.storyboard; sourceTree = "<group>"; };
+		FA9D1C8123BEA64300059C04 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FA9D1C8323BEA7E100059C04 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		FA9D1C8523BEAF5F00059C04 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +136,7 @@
 		FA9D1C5623BCDEAD00059C04 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA9D1C6D23BD04E900059C04 /* UserController.swift */,
+				FA9D1C8323BEA7E100059C04 /* Controller.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9D1C6F23BD05CA00059C04 /* LoginViewController.swift */,
+				FA9D1C8123BEA64300059C04 /* SignUpViewController.swift */,
 				FA9D1C7323BD0AD700059C04 /* FarmerHomeViewController.swift */,
 				FA9D1C7523BD0AF600059C04 /* ConsumerHomeViewController.swift */,
 			);
@@ -159,6 +164,7 @@
 			children = (
 				FA9D1C6523BCE49900059C04 /* CoreDataStack.swift */,
 				FA9D1C7723BD0EA700059C04 /* UserType.swift */,
+				FA9D1C8523BEAF5F00059C04 /* HTTPMethod.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -242,13 +248,15 @@
 				FA9D1C7023BD05CA00059C04 /* LoginViewController.swift in Sources */,
 				FA9D1C7623BD0AF600059C04 /* ConsumerHomeViewController.swift in Sources */,
 				FA9D1C6623BCE49900059C04 /* CoreDataStack.swift in Sources */,
+				FA9D1C8623BEAF5F00059C04 /* HTTPMethod.swift in Sources */,
+				FA9D1C8223BEA64300059C04 /* SignUpViewController.swift in Sources */,
 				FA9D1C4123BCDE6A00059C04 /* AppDelegate.swift in Sources */,
 				FA9D1C4323BCDE6A00059C04 /* SceneDelegate.swift in Sources */,
-				FA9D1C6E23BD04E900059C04 /* UserController.swift in Sources */,
 				FA9D1C6423BCE30C00059C04 /* User+Convenience.swift in Sources */,
 				FA9D1C5F23BCE0D600059C04 /* Order.xcdatamodeld in Sources */,
 				FA9D1C6823BCE7A900059C04 /* UserRepresentation.swift in Sources */,
 				FA9D1C7823BD0EA700059C04 /* UserType.swift in Sources */,
+				FA9D1C8423BEA7E100059C04 /* Controller.swift in Sources */,
 				FA9D1C6A23BCEEAF00059C04 /* ProduceRepresentation.swift in Sources */,
 				FA9D1C5C23BCE0B600059C04 /* Produce.xcdatamodeld in Sources */,
 				FA9D1C6C23BCF06A00059C04 /* Produce+Convenience.swift in Sources */,

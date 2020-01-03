@@ -143,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="1046" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="KGh-He-YEJ">
             <objects>
-                <viewController id="xeS-aS-wws" sceneMemberID="viewController">
+                <viewController id="xeS-aS-wws" customClass="SignUpViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="428-o1-YLH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
