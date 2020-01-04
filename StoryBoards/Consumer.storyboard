@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bw7-tN-D3C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ajj-7r-tJi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -14,13 +14,44 @@
                     <view key="view" contentMode="scaleToFill" id="eBO-pd-dgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-dZ-l3R">
+                                <rect key="frame" x="20" y="143" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="R3R-dZ-l3R" firstAttribute="leading" secondItem="7zh-u6-EUU" secondAttribute="leading" constant="20" id="38T-vk-VE0"/>
+                            <constraint firstItem="7zh-u6-EUU" firstAttribute="trailing" secondItem="R3R-dZ-l3R" secondAttribute="trailing" constant="20" id="55F-ci-ezD"/>
+                            <constraint firstItem="R3R-dZ-l3R" firstAttribute="top" secondItem="7zh-u6-EUU" secondAttribute="top" constant="55" id="tLn-aa-jJs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7zh-u6-EUU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="je3-qp-nY7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lMk-FB-QPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="48"/>
+            <point key="canvasLocation" x="931.88405797101461" y="47.544642857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4HX-3T-hoN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ajj-7r-tJi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bM6-jM-6rd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bw7-tN-D3C" kind="relationship" relationship="rootViewController" id="eSO-N1-C0S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGz-eO-b7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="47.544642857142854"/>
         </scene>
     </scenes>
 </document>
