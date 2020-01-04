@@ -16,5 +16,6 @@ struct UserRepresentation: Codable {
     let firstName: String
     let lastName: String
     let phoneNum: Int16
+    let email: String
     let userType: UserType
 }

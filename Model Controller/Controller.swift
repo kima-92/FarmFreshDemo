@@ -195,19 +195,20 @@ class Controller {
     //MARK:  CoreData CRUD
     
     // Create
-    func createUser(with username: String, password: String, isLoggedIn: Bool, firstName: String, lastName: String, phoneNum: Int16, userType: String, context: NSManagedObjectContext) {
+    func createUser(with username: String, password: String, isLoggedIn: Bool, firstName: String, lastName: String, phoneNum: Int16, email: String, userType: String, context: NSManagedObjectContext) {
         
-        let user = User(username: username, password: password, isLoggedIn: isLoggedIn, firstName: firstName, lastName: lastName, phoneNum: phoneNum, userType: userType, context: context)
+        let user = User(username: username, password: password, isLoggedIn: isLoggedIn, firstName: firstName, lastName: lastName, phoneNum: phoneNum, email: email, userType: userType, context: context)
         CoreDataStack.shared.save(context: context)
         put(user: user)
     }
     
     // Update
-    func updateUser(user: User, with firstName: String, lastName: String, phoneNum: Int16, context: NSManagedObjectContext) {
+    func updateUser(user: User, with firstName: String, lastName: String, phoneNum: Int16, email: String, context: NSManagedObjectContext) {
         
         user.firstName = firstName
         user.lastName = lastName
         user.phoneNum = phoneNum
+        user.email = email
         CoreDataStack.shared.save(context: context)
         put(user: user)
     }

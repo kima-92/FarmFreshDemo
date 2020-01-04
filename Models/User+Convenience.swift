@@ -19,6 +19,7 @@ extension User {
             let id = id,
             let firstName = firstName,
             let lastName = lastName,
+            let email = email,
             let type = userType else { return nil }
         
         var newUserType: UserType = UserType.consumer
@@ -32,7 +33,7 @@ extension User {
             break
         }
         
-        return UserRepresentation(username: username, password: password, id: id, isLoggedIn: isLoggedIn, firstName: firstName, lastName: lastName, phoneNum: phoneNum, userType: newUserType)
+        return UserRepresentation(username: username, password: password, id: id, isLoggedIn: isLoggedIn, firstName: firstName, lastName: lastName, phoneNum: phoneNum, email: email, userType: newUserType)
         
     }
     
@@ -44,6 +45,7 @@ extension User {
                                         firstName: String,
                                         lastName: String,
                                         phoneNum: Int16,
+                                        email: String,
                                         userType: String,
                                         context: NSManagedObjectContext) {
         
@@ -56,6 +58,7 @@ extension User {
         self.firstName = firstName
         self.lastName = lastName
         self.phoneNum = phoneNum
+        self.email = email
         self.userType = userType
     }
     
@@ -71,6 +74,7 @@ extension User {
                   firstName: userRepresentation.firstName,
                   lastName: userRepresentation.lastName,
                   phoneNum: userRepresentation.phoneNum,
+                  email: userRepresentation.email,
                   userType: userRepresentation.userType.rawValue,
                   context: context)
     }

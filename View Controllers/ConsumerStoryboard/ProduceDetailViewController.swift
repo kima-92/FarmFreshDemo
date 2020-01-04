@@ -1,14 +1,17 @@
 //
-//  FarmerHomeViewController.swift
+//  ProduceDetailViewController.swift
 //  FarmFreshDemo
 //
-//  Created by macbook on 1/1/20.
+//  Created by macbook on 1/4/20.
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
 import UIKit
 
-class FarmerHomeViewController: UIViewController {
+class ProduceDetailViewController: UIViewController {
+    
+    var user: User?
+    var produce: Produce?
 
     override func viewDidLoad() {
         super.viewDidLoad()

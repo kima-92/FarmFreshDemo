@@ -1,14 +1,14 @@
 //
-//  ConsumerHomeViewController.swift
+//  ConsumerProfileViewController.swift
 //  FarmFreshDemo
 //
-//  Created by macbook on 1/1/20.
+//  Created by macbook on 1/4/20.
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
 import UIKit
 
-class ConsumerHomeViewController: UIViewController {
+class ConsumerProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
