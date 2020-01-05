@@ -494,6 +494,11 @@
                         <viewLayoutGuide key="safeArea" id="apr-1H-pJD"/>
                     </view>
                     <navigationItem key="navigationItem" id="c6E-ET-YbC"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="FC5-qi-xZo" id="rfr-n7-t5J"/>
+                        <outlet property="fullNameLabel" destination="muX-7a-JNG" id="4BX-HF-48J"/>
+                        <outlet property="phoneNumberLabel" destination="3AJ-Nt-PmD" id="I49-DL-eI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXR-cC-9Jj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

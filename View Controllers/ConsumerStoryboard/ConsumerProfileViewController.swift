@@ -9,22 +9,28 @@
 import UIKit
 
 class ConsumerProfileViewController: UIViewController {
-
+    
+    var user: User?
+    
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        updateViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        
+        guard let user = user,
+            let firstName = user.firstName,
+            let lastName = user.lastName,
+            let email = user.email else { return }
+        
+        fullNameLabel.text = firstName + " " + lastName
+        phoneNumberLabel.text = String(user.phoneNum)
+        emailLabel.text = email
     }
-    */
-
 }
