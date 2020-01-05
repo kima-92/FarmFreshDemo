@@ -480,15 +480,21 @@
                     <navigationItem key="navigationItem" id="yqa-Ln-egw">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="eXy-jX-6pd"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="18o-N5-PIj" id="00L-Uz-38d"/>
+                        <outlet property="isForSaleSegmentedControl" destination="reG-Pz-ETe" id="QsR-0h-wT5"/>
+                        <outlet property="nameTextField" destination="JgR-s7-9Vy" id="J1a-5y-OnI"/>
+                        <outlet property="priceTextField" destination="XLJ-uK-8yN" id="I4R-PR-na2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueJ-6Y-asV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="746" y="762"/>
         </scene>
-        <!--View Controller-->
+        <!--Farmer Profile View Controller-->
         <scene sceneID="fpX-ok-fNI">
             <objects>
-                <viewController id="VKm-eW-i8r" sceneMemberID="viewController">
+                <viewController id="VKm-eW-i8r" customClass="FarmerProfileViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zEY-JY-5uc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -532,6 +538,11 @@
                         <viewLayoutGuide key="safeArea" id="DOq-98-PbD"/>
                     </view>
                     <navigationItem key="navigationItem" id="oxN-11-6bq"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="gB5-1C-7zM" id="lB7-fH-9hi"/>
+                        <outlet property="fullNameLabel" destination="OcO-Tj-9j0" id="Tle-S5-jDG"/>
+                        <outlet property="phoneNumberLabel" destination="oTQ-ep-ii2" id="bTm-Gx-CMn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXi-12-9U4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

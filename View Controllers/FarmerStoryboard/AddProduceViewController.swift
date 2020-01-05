@@ -12,12 +12,26 @@ class AddProduceViewController: UIViewController {
     
     var user: User?
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    @IBOutlet weak var isForSaleSegmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        descriptionTextView.text = ""
     }
     
+    func changeProduceSaleStatus() {
+        
+        if isForSaleSegmentedControl.selectedSegmentIndex == 0 {
+            
+        } else {
+            
+        }
+    }
 
     /*
     // MARK: - Navigation

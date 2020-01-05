@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA65FDDD23C27A58001E7C93 /* FarmerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA65FDDC23C27A58001E7C93 /* FarmerProfileViewController.swift */; };
 		FA9D1C4123BCDE6A00059C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C4023BCDE6A00059C04 /* AppDelegate.swift */; };
 		FA9D1C4323BCDE6A00059C04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D1C4223BCDE6A00059C04 /* SceneDelegate.swift */; };
 		FA9D1C4823BCDE6A00059C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9D1C4623BCDE6A00059C04 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA65FDDC23C27A58001E7C93 /* FarmerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmerProfileViewController.swift; sourceTree = "<group>"; };
 		FA9D1C3D23BCDE6A00059C04 /* FarmFreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmFreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9D1C4023BCDE6A00059C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9D1C4223BCDE6A00059C04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				FA9D1C8D23C007FD00059C04 /* FarmerOrdersTableViewController.swift */,
 				FA9D1C8F23C0085700059C04 /* FarmerProducesTableViewController.swift */,
 				FA9D1C9123C008B400059C04 /* FarmerOrderDetailViewController.swift */,
+				FA65FDDC23C27A58001E7C93 /* FarmerProfileViewController.swift */,
 			);
 			path = FarmerStoryboard;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				FA9D1C9023C0085700059C04 /* FarmerProducesTableViewController.swift in Sources */,
 				FA9D1C6A23BCEEAF00059C04 /* ProduceRepresentation.swift in Sources */,
 				FA9D1CA023C1221D00059C04 /* ProduceDetailViewController.swift in Sources */,
+				FA65FDDD23C27A58001E7C93 /* FarmerProfileViewController.swift in Sources */,
 				FA9D1C9223C008B400059C04 /* FarmerOrderDetailViewController.swift in Sources */,
 				FA9D1C5C23BCE0B600059C04 /* Produce.xcdatamodeld in Sources */,
 				FA9D1C6C23BCF06A00059C04 /* Produce+Convenience.swift in Sources */,
