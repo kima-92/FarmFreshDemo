@@ -12,4 +12,6 @@ struct ProduceRepresentation: Codable {
     let name: String
     let id: UUID
     let image: String // Might need to change to Data, URL, String or UIImage
+    let farmerName: String
+    let produceDescription: String
 }
