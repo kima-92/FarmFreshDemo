@@ -9,6 +9,8 @@
 import UIKit
 
 class FarmerProducesTableViewController: UITableViewController {
+    
+    var user: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()

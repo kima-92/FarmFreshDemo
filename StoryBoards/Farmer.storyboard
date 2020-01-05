@@ -54,6 +54,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="30"/>
                                                 <state key="normal" title="My Profile"/>
                                                 <connections>
+                                                    <action selector="myProfileButtomTapped:" destination="eZh-aM-dis" eventType="touchUpInside" id="7Xx-I7-JrU"/>
                                                     <segue destination="VKm-eW-i8r" kind="show" identifier="FarmerProfileSegue" id="abW-c1-YYb"/>
                                                 </connections>
                                             </button>
@@ -61,6 +62,7 @@
                                                 <rect key="frame" x="0.0" y="45" width="364" height="30"/>
                                                 <state key="normal" title="Add New Produce"/>
                                                 <connections>
+                                                    <action selector="addNewProduceButtonTapped:" destination="eZh-aM-dis" eventType="touchUpInside" id="bgQ-Nz-jRq"/>
                                                     <segue destination="BiJ-mw-2Kf" kind="show" identifier="AddNewProduceSegue" id="eZ1-JB-PDJ"/>
                                                 </connections>
                                             </button>
@@ -68,13 +70,15 @@
                                                 <rect key="frame" x="0.0" y="90" width="364" height="30"/>
                                                 <state key="normal" title="Produce on Sale"/>
                                                 <connections>
-                                                    <segue destination="9Xa-gL-qhZ" kind="show" identifier="OnSaleProduceListSegue" id="MfF-UF-o8Y"/>
+                                                    <action selector="produceOnSaleButtonTapped:" destination="eZh-aM-dis" eventType="touchUpInside" id="eeh-U1-wDm"/>
+                                                    <segue destination="9Xa-gL-qhZ" kind="show" identifier="FarmerProduceOnSaleSegue" id="MfF-UF-o8Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfq-ju-Gdx">
                                                 <rect key="frame" x="0.0" y="135" width="364" height="30"/>
-                                                <state key="normal" title="Orders List"/>
+                                                <state key="normal" title="Pending Orders"/>
                                                 <connections>
+                                                    <action selector="pendingOrdersButtonTapped:" destination="eZh-aM-dis" eventType="touchUpInside" id="e5R-Kn-A7J"/>
                                                     <segue destination="oXP-jm-TTD" kind="show" identifier="DisplayOrdersSegue" id="czv-dJ-OZF"/>
                                                 </connections>
                                             </button>
@@ -92,6 +96,12 @@
                         <viewLayoutGuide key="safeArea" id="hIS-ID-Wl2"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ok1-6b-Ebn"/>
+                    <connections>
+                        <outlet property="itemsInInventoryLabel" destination="hmc-ZT-0jD" id="eeg-uA-TNC"/>
+                        <outlet property="itemsOnSaleLabel" destination="PTM-PJ-bkK" id="SUz-qQ-swY"/>
+                        <outlet property="pendingOrdersLabel" destination="Z1Q-Nz-tA6" id="6cS-Id-dAq"/>
+                        <outlet property="welcomeUserLabel" destination="sGZ-dd-p3l" id="o4J-TR-aR4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaZ-IE-NsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
