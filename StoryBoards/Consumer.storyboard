@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ajj-7r-tJi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bw7-tN-D3C">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3R-dZ-l3R">
-                                <rect key="frame" x="20" y="143" width="374" height="30"/>
+                                <rect key="frame" x="20" y="99" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-yT-YKq">
-                                <rect key="frame" x="20" y="253" width="374" height="165"/>
+                                <rect key="frame" x="20" y="209" width="374" height="165"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7z-qv-EZb">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
@@ -35,9 +35,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAs-Za-mF8">
                                         <rect key="frame" x="0.0" y="45" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <state key="normal" title="Farmers near Me"/>
+                                        <state key="normal" title="Produce near Me"/>
                                         <connections>
-                                            <segue destination="rh0-ZT-5Jt" kind="show" identifier="FarmersNearMeSegue" id="nJL-E5-25H"/>
+                                            <segue destination="t1p-QJ-eQw" kind="show" identifier="ProducesOptionsSegue" id="oxy-aY-s8p"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pb-pL-itB">
@@ -81,11 +81,11 @@
             <objects>
                 <viewController id="CHg-pR-KE8" customClass="ConsumerCartViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xxD-tH-Eb6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="7h7-9D-IU5">
-                                <rect key="frame" x="20" y="118" width="374" height="577"/>
+                                <rect key="frame" x="20" y="30" width="374" height="577"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6d-Ao-6Mq">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
@@ -220,9 +220,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="t1p-QJ-eQw" kind="show" identifier="ConsumerProduceOptionsSegue" id="KsF-Sw-WpG"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -236,19 +233,38 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23V-dZ-xYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931" y="55"/>
+            <point key="canvasLocation" x="3255" y="-735"/>
         </scene>
         <!--Consumer Produce Options Table View Controller-->
         <scene sceneID="TaD-FF-7e0">
             <objects>
                 <tableViewController id="t1p-QJ-eQw" customClass="ConsumerProduceOptionsTableViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6F4-wc-Ccf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="wHE-rf-my9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produce near You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEx-af-uBf">
+                                    <rect key="frame" x="30" y="32" width="354" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kEx-af-uBf" secondAttribute="trailing" constant="30" id="DL9-4a-6ov"/>
+                                <constraint firstAttribute="bottom" secondItem="kEx-af-uBf" secondAttribute="bottom" constant="32" id="Heu-Lt-Y4X"/>
+                                <constraint firstItem="kEx-af-uBf" firstAttribute="top" secondItem="wHE-rf-my9" secondAttribute="top" constant="32" id="rlH-hf-peY"/>
+                                <constraint firstItem="kEx-af-uBf" firstAttribute="leading" secondItem="wHE-rf-my9" secondAttribute="leading" constant="30" id="s44-dP-CJK"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="4wS-dR-eIP" style="IBUITableViewCellStyleDefault" id="Yfn-ZC-W1e">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="128" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yfn-ZC-W1e" id="L9T-zU-ABK">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -277,25 +293,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMN-J1-fV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="55"/>
+            <point key="canvasLocation" x="1922" y="48"/>
         </scene>
         <!--Produce Detail View Controller-->
         <scene sceneID="si2-Vd-5vh">
             <objects>
                 <viewController id="UgW-5m-fRb" customClass="ProduceDetailViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8m-8o-rTl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuD-pk-ZjX">
-                                <rect key="frame" x="20" y="703" width="374" height="30"/>
+                                <rect key="frame" x="20" y="615" width="374" height="30"/>
                                 <state key="normal" title="Add to Cart"/>
                                 <connections>
                                     <action selector="addToCartButtonPressed:" destination="UgW-5m-fRb" eventType="touchUpInside" id="cHd-qr-iUj"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cU9-6y-G2h">
-                                <rect key="frame" x="20" y="118" width="374" height="550"/>
+                                <rect key="frame" x="20" y="30" width="374" height="550"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-Fs-JO2">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="299"/>
@@ -372,14 +388,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5X-k6-ZZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3843.4782608695655" y="50.892857142857139"/>
+            <point key="canvasLocation" x="2861" y="48"/>
         </scene>
         <!--Consumer Order History Table View Controller-->
         <scene sceneID="W2U-JY-CzI">
             <objects>
                 <tableViewController id="2Sd-eq-0fJ" customClass="ConsumerOrderHistoryTableViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rmq-qN-MEZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="aPA-AI-coG">
@@ -455,18 +471,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qV9-0Y-lOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="790"/>
+            <point key="canvasLocation" x="1923" y="790"/>
         </scene>
         <!--Consumer Profile View Controller-->
         <scene sceneID="HE3-67-hAh">
             <objects>
                 <viewController id="rAx-BA-Jtd" customClass="ConsumerProfileViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="caY-Et-T3B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qTG-zh-Obs">
-                                <rect key="frame" x="30" y="148" width="354" height="177"/>
+                                <rect key="frame" x="30" y="60" width="354" height="177"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muX-7a-JNG">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
@@ -513,24 +529,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXR-cC-9Jj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="936" y="790"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4HX-3T-hoN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ajj-7r-tJi" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bM6-jM-6rd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bw7-tN-D3C" kind="relationship" relationship="rootViewController" id="eSO-N1-C0S"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AGz-eO-b7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="21.739130434782609" y="47.544642857142854"/>
         </scene>
     </scenes>
 </document>
