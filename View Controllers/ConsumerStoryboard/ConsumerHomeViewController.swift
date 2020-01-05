@@ -11,7 +11,7 @@ import UIKit
 class ConsumerHomeViewController: UIViewController {
     
     var user: User?
-    let controller = Controller()
+//    let controller = Controller()
 
     override func viewDidLoad() {
         super.viewDidLoad()

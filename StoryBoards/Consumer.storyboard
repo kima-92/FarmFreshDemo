@@ -279,10 +279,10 @@
             </objects>
             <point key="canvasLocation" x="2878" y="55"/>
         </scene>
-        <!--View Controller-->
+        <!--Produce Detail View Controller-->
         <scene sceneID="si2-Vd-5vh">
             <objects>
-                <viewController id="UgW-5m-fRb" sceneMemberID="viewController">
+                <viewController id="UgW-5m-fRb" customClass="ProduceDetailViewController" customModule="FarmFreshDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d8m-8o-rTl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,6 +290,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuD-pk-ZjX">
                                 <rect key="frame" x="20" y="703" width="374" height="30"/>
                                 <state key="normal" title="Add to Cart"/>
+                                <connections>
+                                    <action selector="addToCartButtonPressed:" destination="UgW-5m-fRb" eventType="touchUpInside" id="cHd-qr-iUj"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cU9-6y-G2h">
                                 <rect key="frame" x="20" y="118" width="374" height="550"/>
@@ -359,6 +362,13 @@
                         <viewLayoutGuide key="safeArea" id="fFC-or-okk"/>
                     </view>
                     <navigationItem key="navigationItem" id="o5R-td-xsJ"/>
+                    <connections>
+                        <outlet property="addToCartButton" destination="VuD-pk-ZjX" id="z8e-Vs-XCx"/>
+                        <outlet property="farmerNameLabel" destination="3Ye-ip-mtv" id="TKM-wX-Uua"/>
+                        <outlet property="photoImageView" destination="U4W-FE-fgE" id="49J-Jd-7rC"/>
+                        <outlet property="produceDescriptionLabel" destination="vq2-4Q-dtx" id="nGz-VM-3TP"/>
+                        <outlet property="produceNameLabel" destination="cxN-Kc-RVY" id="xIj-uM-VKS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5X-k6-ZZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
